@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f9fdffaaf25ca49aa43b2365723a54, type: 3}
+  m_Name: BallList
+  m_EditorClassIdentifier: 
+  ballStats:
+  - {fileID: 11400000, guid: bfe192f7b9426ed4ab2930f12538a793, type: 2}
+  - {fileID: 11400000, guid: d0f0c00df6686b94691f907c7b7937d7, type: 2}
+  - {fileID: 11400000, guid: d2d4488965ae52847a163acc4bedebbb, type: 2}
+  - {fileID: 11400000, guid: 3cc200843b8ff8f44b9279660766c146, type: 2}
+  - {fileID: 11400000, guid: 91bf9f73101d7de40be0ea79bb26f455, type: 2}
+  - {fileID: 11400000, guid: 32e382a6234e2664ea81b0f9e076e4f5, type: 2}
+  - {fileID: 11400000, guid: be0a0205beed8df4e810cde2191c4dfa, type: 2}
+  - {fileID: 11400000, guid: d3a0cabe6dbee514f851e5e25c035a30, type: 2}
+  - {fileID: 11400000, guid: 6bc858302b1b12a4ba12253aa0ab7656, type: 2}
+  - {fileID: 11400000, guid: 27a08b4b0897a6247930ed39b0d891fc, type: 2}

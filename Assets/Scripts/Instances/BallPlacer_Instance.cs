@@ -3,12 +3,16 @@ using System.Net;
 using Lean.Touch;
 using Unity.VisualScripting;
 using UnityEngine;
-
+using UnityEngine.UI;
+using Random = UnityEngine.Random;
 public class BallPlacer_Instance : MonoBehaviour
 {
     public static BallPlacer_Instance instance;
     [SerializeField] RectTransform Rectplacer;
-    [SerializeField] GameObject Balls;
+    [SerializeField] BallList ballList;
+    [SerializeField] BallStats NextBall, CurrentBall;
+    [SerializeField] Image nextBallImage, currentBallImage;
+    [SerializeField] float leftLimit, rightLimit;
     bool fingerPlaced = false;
     bool oneBall = false;
     SpawnBalls_Instance SB;
@@ -29,6 +33,7 @@ public class BallPlacer_Instance : MonoBehaviour
     }
     void Start()
     {
+        UpdateImages(ballList.ballStats[Random.Range(0, 3)], ballList.ballStats[Random.Range(0, 3)]);
         SB = SpawnBalls_Instance.instance;
         LeanTouch.OnFingerDown += FingerPlaced;
         LeanTouch.OnFingerUpdate += Positioning;
@@ -42,28 +47,46 @@ public class BallPlacer_Instance : MonoBehaviour
     }
     private void Positioning(LeanFinger finger)
     {
-        if (fingerPlaced) {
+        if (fingerPlaced)
+        {
             Vector2 ScreenPosition = finger.ScreenPosition;
-            // Vector3 worldPosition = Camera.main.ScreenToWorldPoint(new Vector3(ScreenPosition.x, ScreenPosition.y, Camera.main.nearClipPlane));
             Vector2 localPoint;
             RectTransformUtility.ScreenPointToLocalPointInRectangle(Rectplacer.parent as RectTransform, ScreenPosition, Camera.main, out localPoint);
+            if (localPoint.x < leftLimit)
+            {
+                localPoint.x = leftLimit;
+            }
+            else if (localPoint.x > rightLimit) {
+                localPoint.x = rightLimit;
+            }
             Rectplacer.localPosition = new Vector3(localPoint.x, Rectplacer.localPosition.y, Rectplacer.localPosition.z);
         }
     }
     private void FingerPlaced(LeanFinger finger)
     {
         fingerPlaced = true;
-         oneBall = true;
+        oneBall = true;
     }
+    //NOTE: SpawnBalls when finger lifted
     private void FingerLifted(LeanFinger finger)
     {
         fingerPlaced = false;
         if (oneBall)
         {
-            SB.SpawnBalls(Rectplacer.position,0);
-            
+            SB.SpawnBalls(Rectplacer.position, CurrentBall.level);
+            UpdateImages(ballList.ballStats[Random.Range(0, 3)], NextBall);
             oneBall = false;
         }
     }
+    void UpdateImages(BallStats nextbs, BallStats currentbs)
+    {
+        CurrentBall = currentbs;
+        NextBall = nextbs;
+        currentBallImage.sprite = CurrentBall.sprite;
+        nextBallImage.sprite = NextBall.sprite;
+        currentBallImage.GetComponent<RectTransform>().localScale = new Vector3(CurrentBall.size, CurrentBall.size, 0);
+        nextBallImage.GetComponent<RectTransform>().localScale = new Vector3(CurrentBall.size, CurrentBall.size, 0);
+    }
+
     
 }

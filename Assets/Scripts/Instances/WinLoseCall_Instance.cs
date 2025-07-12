@@ -1,5 +1,6 @@
 using UnityEngine;
 
+//NOTE: Universal Lose Call
 public class WinLoseCall_Instance : MonoBehaviour
 {
     public static WinLoseCall_Instance instance;
