@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class TopLine_Instance : MonoBehaviour
 {
     WinLoseCall_Instance WLC;
@@ -7,6 +8,7 @@ public class TopLine_Instance : MonoBehaviour
     {
         WLC = WinLoseCall_Instance.instance;
     }
+    //NOTE: when ball crosses the line without momentum
     void OnTriggerStay2D(Collider2D collision)
     {
         Rigidbody2D h = collision.GetComponent<Rigidbody2D>();
