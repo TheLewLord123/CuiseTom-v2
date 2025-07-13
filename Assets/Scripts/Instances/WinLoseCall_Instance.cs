@@ -1,10 +1,10 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 //NOTE: Universal Lose Call
 public class WinLoseCall_Instance : MonoBehaviour
 {
     public static WinLoseCall_Instance instance;
-    bool lose = false;
+    bool lose = false, win = false;
     void Awake()
     {
         if (instance == null)
@@ -16,6 +16,7 @@ public class WinLoseCall_Instance : MonoBehaviour
             Destroy(this);
         }
         lose = false;
+        win = false;
     }
 
     public void Lose()
@@ -23,7 +24,15 @@ public class WinLoseCall_Instance : MonoBehaviour
         if (lose == false)
         {
             lose = true;
-            Debug.Log("lose");
+            SceneManager.LoadScene("xxLose");
+        }
+    }
+    public void Win()
+    {
+        if (win == false)
+        {
+            win = true;
+            SceneManager.LoadScene("xxWin");
         }
     }
 }
