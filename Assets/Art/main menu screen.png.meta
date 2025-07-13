@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 13c65c9231df34943822872e0a2d75e5
+guid: 3d58c5d1019c2a64ea8d405b10d2ed8b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1491377864293596413
-    second: RGJ-ASSETS_Umbrella_0
+      213: -4290209256826591779
+    second: main menu screen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +97,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RGJ-ASSETS_Umbrella_0
+      name: main menu screen_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 412
-        height: 171
+        width: 1080
+        height: 2400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30346ecebbf8d4be0800000000000000
-      internalID: -1491377864293596413
+      spriteID: dd522c2596d1674c0800000000000000
+      internalID: -4290209256826591779
       vertices: []
       indices: 
       edges: []
@@ -160,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      RGJ-ASSETS_Umbrella_0: -1491377864293596413
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

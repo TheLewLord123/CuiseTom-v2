@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RGJ-ASSETS_score_0: 6404607287429750058
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

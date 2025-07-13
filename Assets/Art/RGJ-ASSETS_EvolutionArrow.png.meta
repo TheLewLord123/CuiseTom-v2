@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RGJ-ASSETS_EvolutionArrow_0: -2765091604229714088
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
