@@ -79,7 +79,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -131,6 +131,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -413,7 +426,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -422,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RDG Glass NEW_0: 2665328876619352332
+      RDG Glass NEW_1: -2902019166126210005
+      RDG Glass NEW_10: 5848522302241642361
+      RDG Glass NEW_11: 278238217548822310
+      RDG Glass NEW_2: -4713985730342492599
+      RDG Glass NEW_3: 2782840062575607178
+      RDG Glass NEW_4: -8799061508758294433
+      RDG Glass NEW_5: 1059802006882747204
+      RDG Glass NEW_6: 214603427747787124
+      RDG Glass NEW_7: 4186795350184782087
+      RDG Glass NEW_8: 3215839033976123001
+      RDG Glass NEW_9: -4780224415448636733
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
