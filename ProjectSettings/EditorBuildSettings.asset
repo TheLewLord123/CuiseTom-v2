@@ -12,8 +12,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Launch.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
   - enabled: 1
+    path: Assets/Scenes/MainGame.unity
+    guid: db98a98e92742a44f840a40fc204a610
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 36545a01dcc9e4d41b829b50d1beb927
+  - enabled: 1
+    path: Assets/Scenes/xxWin.unity
+    guid: ec067415a809afe4db92c97976f83606
+  - enabled: 1
+    path: Assets/Scenes/xxLose.unity
+    guid: 48d3f410285d37843913e17f0d7f3321
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 35d13c02c081f0241aa5e5c47d3c1330, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 0b380ee674570964bb81732ed668eff3, type: 2}

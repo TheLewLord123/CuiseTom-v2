@@ -9,13 +9,13 @@ public class TransitionsScript : MonoBehaviour
 
     public void LoadLevel()
     {
-        StartCoroutine(Load(SceneManager.GetActiveScene().buildIndex + 1));
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public IEnumerator Load(int BuildIndex)
-    {
-        transition.SetTrigger("SceneTransition");
-        yield return new WaitForSecondsRealtime(2f);
-        SceneManager.LoadScene(BuildIndex);
-    }
+    //public IEnumerator Load(int BuildIndex)
+    //{
+    //    transition.SetTrigger("SceneTransition");
+    //    yield return new WaitForSecondsRealtime(2f);
+    //    SceneManager.LoadScene(BuildIndex);
+    //}
 }
