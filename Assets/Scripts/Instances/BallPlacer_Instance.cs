@@ -12,7 +12,8 @@ public class BallPlacer_Instance : MonoBehaviour
     [SerializeField] BallList ballList;
     [SerializeField] BallStats NextBall, CurrentBall;
     [SerializeField] Image nextBallImage, currentBallImage;
-    
+    [SerializeField] private AudioSource ballpop;
+
     [SerializeField] float leftLimit, rightLimit,bottomLimit;
     bool fingerPlaced = false;
     bool oneBall = false;
@@ -94,7 +95,6 @@ public class BallPlacer_Instance : MonoBehaviour
         nextBallImage.sprite = NextBall.sprite;
         currentBallImage.GetComponent<RectTransform>().localScale = new Vector3(CurrentBall.size, CurrentBall.size, 0);
         nextBallImage.GetComponent<RectTransform>().localScale = new Vector3(CurrentBall.size, CurrentBall.size, 0);
+        ballpop.Play();
     }
-
-    
 }
