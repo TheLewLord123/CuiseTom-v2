@@ -82,7 +82,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -134,6 +134,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -438,7 +451,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -447,7 +460,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RDJ Glass_0: -1529874823779211916
+      RDJ Glass_1: -3452553306276725476
+      RDJ Glass_10: -7397443564947931874
+      RDJ Glass_11: -6330889858394598178
+      RDJ Glass_12: 7567345725668062461
+      RDJ Glass_2: 1767573270310509533
+      RDJ Glass_3: 4776833368843510611
+      RDJ Glass_4: -2746134349978302987
+      RDJ Glass_5: -8995975594384198902
+      RDJ Glass_6: -1577833332361127300
+      RDJ Glass_7: -8321988543608552808
+      RDJ Glass_8: 1251353543773879202
+      RDJ Glass_9: 5875050430172854602
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

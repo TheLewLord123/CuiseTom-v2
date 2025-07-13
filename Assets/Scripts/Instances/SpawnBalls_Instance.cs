@@ -25,7 +25,8 @@ public class SpawnBalls_Instance : MonoBehaviour
         PU.ScoreUpdate(b.pointsWhenSpawned);
         GameObject g = Instantiate(Balls, pos, Quaternion.identity);
         g.GetComponent<BallCombiner>().stats = ballList.ballStats[level];
-
+        g.GetComponent<Rigidbody2D>().linearVelocityY = -0.2f;
+        g.GetComponent<SpriteRenderer>().sprite = ballList.ballStats[level].sprite;
         g.transform.localScale = new Vector3(b.size, b.size, 0);
     }
 }
