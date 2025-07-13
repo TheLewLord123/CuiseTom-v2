@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f519578f98254bb53771910772de0, type: 3}
   m_Name: level 6
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 9150d7e95bbb6664f9003b200188f544, type: 3}
+  sprite: {fileID: 21300000, guid: a0c6cfa5e1310cc488fae8c52e39abd8, type: 3}
   level: 6
   size: 1.9
   pointsWhenSpawned: 7
