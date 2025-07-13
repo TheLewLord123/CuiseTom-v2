@@ -19,8 +19,8 @@ public class PointUpdater_Instance : MonoBehaviour
     }
     public void ScoreUpdate(int s)
     {
-        score += s;
-        Score.text = score.ToString();
+        // score += s;
+        // Score.text = score.ToString();
     }
 
 }

@@ -8,11 +8,12 @@ using Random = UnityEngine.Random;
 public class BallPlacer_Instance : MonoBehaviour
 {
     public static BallPlacer_Instance instance;
-    [SerializeField] RectTransform Rectplacer;
+    [SerializeField] RectTransform Rectplacer, RectHat;
     [SerializeField] BallList ballList;
     [SerializeField] BallStats NextBall, CurrentBall;
     [SerializeField] Image nextBallImage, currentBallImage;
-    [SerializeField] float leftLimit, rightLimit;
+    
+    [SerializeField] float leftLimit, rightLimit,bottomLimit;
     bool fingerPlaced = false;
     bool oneBall = false;
     SpawnBalls_Instance SB;
@@ -52,14 +53,21 @@ public class BallPlacer_Instance : MonoBehaviour
             Vector2 ScreenPosition = finger.ScreenPosition;
             Vector2 localPoint;
             RectTransformUtility.ScreenPointToLocalPointInRectangle(Rectplacer.parent as RectTransform, ScreenPosition, Camera.main, out localPoint);
+            if (localPoint.y < bottomLimit)
+            {
+                oneBall = false;
+                return;
+            }
             if (localPoint.x < leftLimit)
             {
                 localPoint.x = leftLimit;
             }
-            else if (localPoint.x > rightLimit) {
+            else if (localPoint.x > rightLimit)
+            {
                 localPoint.x = rightLimit;
             }
             Rectplacer.localPosition = new Vector3(localPoint.x, Rectplacer.localPosition.y, Rectplacer.localPosition.z);
+            RectHat.localPosition = new Vector3(localPoint.x, RectHat.localPosition.y, RectHat.localPosition.z);
         }
     }
     private void FingerPlaced(LeanFinger finger)

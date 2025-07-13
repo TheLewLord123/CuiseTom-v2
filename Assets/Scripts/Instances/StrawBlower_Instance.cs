@@ -14,9 +14,9 @@ public class StrawBlower_Instance : MonoBehaviour
         }
         else Destroy(this);
 
-        straw.SetActive(false);
-        strawCollider.SetActive(false);
-        StartCoroutine(timer(1.0f));
+        // straw.SetActive(false);
+        // strawCollider.SetActive(false);
+        // StartCoroutine(timer(1.0f));
     }
 
     public void SummonStraw()
